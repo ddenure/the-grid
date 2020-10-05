@@ -292,14 +292,16 @@ body {
 .site-nav li a {
     display: block;
     padding: 20px;
-    font-family: 'Nunito', sans-serif;
-    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    font-weight: 700;
     text-decoration: none;
-    color: var(--lightblack);
+    color: var(--darkgray);
 }
 
 .site-nav li a:hover {
-    color: var(--darkgray);
+    color: var(--gray);
 }
 
 .site-nav .site-nav-logo {
@@ -585,7 +587,7 @@ body {
     position: relative;
     display: block;
     overflow: hidden;
-    border-radius: 12px;
+    border-radius: 6px;
 }
 
 .post-card-image {
@@ -599,7 +601,7 @@ body {
 .post-card-content-link {
     position: relative;
     display: block;
-    color: var(--darkgrey);
+    color: var(--darkgray);
 }
 
 .post-card-content-link:hover {
@@ -645,7 +647,7 @@ body {
 
 .post-card-excerpt {
     max-width: 56em;
-    color: var(--midgrey);
+    color: var(--darkgray);
 }
 
 .post-card-excerpt p {
@@ -929,6 +931,7 @@ make sure this only happens on large viewports / desktop-ish devices.
     align-items: center;
     color: var(--gray);
     font-size: 1.3rem;
+    letter-spacing: .2px;
     line-height: 1.4em;
     font-weight: 700;
     margin-top: 40px;
@@ -1892,7 +1895,7 @@ Usage (In Ghost editor):
 /* ---------------------------------------------------------- */
 
 .read-next {
-    background: var(--lightwhitebg);
+    background: var(--lighterwhitebg);
 }
 
 .read-next-feed {
@@ -1913,12 +1916,10 @@ Usage (In Ghost editor):
 
 .read-next .post-card-primary-tag {
     color: var(--blue);
-    opacity: 0.9;
 }
 
 .read-next .post-card-title {
     color: var(--darkgray);
-    opacity: 0.8;
     transition: all 0.2s ease-in-out;
 }
 
@@ -1927,8 +1928,8 @@ Usage (In Ghost editor):
 }
 
 .read-next .post-card-excerpt {
-    color: var(--grey);
-    font-weight: 600;
+    color: var(--darkgray);
+    font-family: 'Lato', sans-serif;
 }
 
 .read-next .static-avatar {
@@ -1936,7 +1937,7 @@ Usage (In Ghost editor):
 }
 
 .read-next .post-card-byline-content {
-    color: var(--grey);
+    color: var(--darkgray);
 }
 
 .read-next .post-card-byline-content a {
