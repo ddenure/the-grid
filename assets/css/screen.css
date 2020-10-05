@@ -306,6 +306,7 @@ body {
     padding: 20px;
     font-weight: 800;
     text-decoration: none;
+    text-transform: uppercase;
     color: var(--darkwhite);
 }
 
@@ -431,6 +432,7 @@ body {
   }
 
 /* 48em = 768px */
+
 
 @media (min-width: 48em) {
     .site-nav li {
@@ -1311,7 +1313,7 @@ make sure this only happens on large viewports / desktop-ish devices.
     margin: 0 auto;
     padding: 0 70px 1vw;
     min-height: 230px;
-    font-size: 1.8rem;
+    font-size: 2.0rem;
     line-height: 1.4em;
     background: #fff;
 }
