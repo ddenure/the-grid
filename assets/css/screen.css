@@ -280,16 +280,6 @@ body {
 
 /* New Menu */
 
-.site-nav-main {
-    position: fixed;
-    top: 0;
-    right: 0;
-    left: 0;
-    z-index: 1000;
-    background: var(--darkmode);
-    border-bottom: 1px solid var(--darkborder);
-  }
-
 .site-nav ul {
     margin: 0;
     padding: 0;
@@ -731,7 +721,7 @@ body {
 /* Special behaviors for home navigation */
 
 .home-template .site-main {
-    margin-top: 64px;
+    margin-top: 16px;
 }
 
 @media (max-width: 700px) {
@@ -1199,10 +1189,10 @@ make sure this only happens on large viewports / desktop-ish devices.
 .post-full-header {
     position: relative;
     margin: 0 auto;
-    padding: 80px 70px 50px;
+    padding: 20px 70px 50px;
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
-    text-align: left;
+    text-align: center;
 }
 
 .post-full-tags {
