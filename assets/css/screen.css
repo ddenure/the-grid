@@ -586,8 +586,6 @@ body {
     display: block;
     overflow: hidden;
     border-radius: 12px;
-    box-sizing: border-box;
-    box-shadow: 0 4px 7px rgba(0,0,0,.25);
 }
 
 .post-card-image {
@@ -1026,7 +1024,7 @@ make sure this only happens on large viewports / desktop-ish devices.
     background: #fff;
 }
 
-.post-full-content p {
+.post-full-content p, .post-full-content li {
     font-size: 20px;
     font-family: 'Lato',Helvetica,sans-serif;
     line-height: 1.5;
@@ -1173,8 +1171,11 @@ Usage (In Ghost editor):
 
 .post-full-content blockquote {
     margin: 0 0 1.5em;
-    padding: 0 1.5em;
-    border-left: #3eb0ef 3px solid;
+    padding: 0 12%;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.3;
+    font-family: 'Lato',Helvetica,sans-serif;
 }
 @media (max-width: 500px) {
     .post-full-content blockquote {
@@ -1187,8 +1188,14 @@ Usage (In Ghost editor):
     color: inherit;
     font-size: inherit;
     line-height: inherit;
-    font-style: italic;
+    font-style: inherit;
 }
+
+@media only screen and (min-width: 750px) {
+    .post-full-content blockquote {
+     font-size:28px
+    }
+   }
 
 .post-full-content blockquote p:last-child {
     margin-bottom: 0;
@@ -1861,7 +1868,7 @@ Usage (In Ghost editor):
     margin: 0 auto;
     padding: 16px 32px;
     max-width: 900px;
-    background-color: var(--darkgreybg);
+    background-color: var(--lightwhitebg);
     border-radius: 12px;
 }
 
@@ -1884,7 +1891,7 @@ Usage (In Ghost editor):
 /* ---------------------------------------------------------- */
 
 .read-next {
-    background: var(--darkgreybg);
+    background: var(--lightwhitebg);
 }
 
 .read-next-feed {
@@ -1892,7 +1899,6 @@ Usage (In Ghost editor):
     flex-wrap: wrap;
     margin: 0 -25px;
     padding: 60px 0 0 0;
-    border-bottom: 1px solid var(--darkborder);
 }
 
 .read-next .post-card {
@@ -1910,7 +1916,7 @@ Usage (In Ghost editor):
 }
 
 .read-next .post-card-title {
-    color: var(--darkwhite);
+    color: var(--darkgray);
     opacity: 0.8;
     transition: all 0.2s ease-in-out;
 }

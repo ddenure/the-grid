@@ -24,6 +24,7 @@
     --lightgrey: #cccccc;
     --grayborder: #eeeef0;
     --whitegrey: #ededed;
+    --lightwhitebg: #f5f5f7;
     --pink: #fa3a57;
     --brown: #a3821a;
     --darkmode: #000000;
@@ -124,17 +125,6 @@ body {
 ol,
 ul {
     list-style: none;
-}
-blockquote,
-q {
-    quotes: none;
-}
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-    content: "";
-    content: none;
 }
 table {
     border-spacing: 0;
@@ -403,13 +393,10 @@ dd {
 blockquote {
     margin: 1.5em 0;
     padding: 0 1.6em 0 1.6em;
-    border-left: var(--whitegrey) 0.5em solid;
 }
 
 blockquote p {
     margin: 0.8em 0;
-    font-size: 1.2em;
-    font-weight: 300;
 }
 
 blockquote small {
