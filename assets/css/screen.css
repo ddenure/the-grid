@@ -1175,7 +1175,7 @@ Usage (In Ghost editor):
     font-size: 20px;
     font-weight: 700;
     line-height: 1.3;
-    font-family: 'Lato',Helvetica,sans-serif;
+    font-family: 'Merriweather', serif;
 }
 @media (max-width: 500px) {
     .post-full-content blockquote {
@@ -1311,10 +1311,11 @@ Usage (In Ghost editor):
 }
 
 .post-full-content h3 {
-    margin: 0.5em 0 0.2em;
+    margin: 1.0em 0 1.5em;
     font-size: 2.0rem;
     font-family: 'Open Sans', sans-serif;
     text-transform: uppercase;
+    letter-spacing: .1em;
     color: var(--blue);
     line-height: 1.3em;
     font-weight: 700;
