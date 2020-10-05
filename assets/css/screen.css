@@ -33,9 +33,7 @@ production stylesheet in assets/built/screen.css
 
 body {
     background: #fff;
-    font-family: 'Nunito', sans-serif;
-    font-weight: 600;
-;
+    font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
 }
 
 .img {
@@ -294,64 +292,34 @@ body {
 .site-nav li a {
     display: block;
     padding: 20px;
-    font-weight: 800;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
     text-decoration: none;
-    text-transform: uppercase;
-    color: var(--darkwhite);
+    color: var(--lightblack);
 }
 
 .site-nav li a:hover {
-    color: var(--blue);
-}
-
-.site-nav li a.ss-button {
-    padding: 6px 12px;
-    margin-top: 11px;
-    margin-left: 12px;
-    background-color: var(--darkblue);
-    border-radius: 6px;
-    -webkit-box-shadow: 0 2px 0 var(--darkblueborder);
-    box-shadow: 0 2px 0 var(--darkblueborder);
-}
-
-.site-nav li a.ss-button:hover {
-    color: var(--darkwhite);
-    background-color: var(--darkbluehover);
-}
-
-.site-nav li a.ss-button:active {
-    margin-top: 12px;
-    background-color: var(--darkbluehover);
-    -webkit-box-shadow: 0 1px 0 var(--darkblueborder);
-    box-shadow: 0 1px 0 var(--darkblueborder);
-}
-
-@media (max-width: 767px) {
-    .site-nav li a.ss-button {
-        padding: 12px;
-        margin: 10px 12px 20px;
-        text-align: center;
-    }
+    color: var(--darkgray);
 }
 
 .site-nav .site-nav-logo {
     display: block;
     float: left;
     font-size: 2em;
-    padding: 14px 10px 17px;
+    padding: 0px 10px;
     text-decoration: none;
     margin-left: 15px;
 }
 
 .site-nav .site-nav-logo img {
-    height: 20px;
+    height: 70px;
 }
 
 /* menu */
 
 .site-header {
-    background: var(--darkmode);
-    border-bottom: 1px solid var(--darkborder);
+    background: var(--white);
+    border-bottom: 1px solid var(--grayborder);
 }
 
 .site-nav .nav {
@@ -455,167 +423,6 @@ body {
         padding-left: 0;
     }
   }
-
-/* 5. Site Navigation
-/* ---------------------------------------------------------- 
-
-.site-nav-main {
-    position: fixed;
-    top: 0;
-    right: 0;
-    left: 0;
-    z-index: 1000;
-    background: var(--darkmode);
-    border-bottom: 1px solid var(--darkborder);
-}
-
-.site-nav {
-    position: relative;
-    z-index: 100;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    overflow-y: hidden;
-    height: 64px;
-    font-size: 1.6rem;
-}
-
-.site-nav-left-wrapper {
-    position: relative;
-    flex: 1 0 auto;
-    display: flex;
-}
-
-.site-nav-left {
-    flex: 1 0 auto;
-    display: flex;
-    align-items: center;
-    overflow-x: auto;
-    overflow-y: hidden;
-    -webkit-overflow-scrolling: touch;
-    margin-right: 10px;
-    padding: 10px 0 80px;
-    font-weight: 700;
-    letter-spacing: 0.2px;
-    white-space: nowrap;
-
-    -ms-overflow-scrolling: touch;
-}
-
-.site-nav-left .nav li:last-of-type {
-    padding-right: 20px;
-}
-
-.site-nav-logo {
-    position: relative;
-    z-index: 100;
-    flex-shrink: 0;
-    display: inline-block;
-    margin-right: 32px;
-    margin-top: -1px;
-    padding: 5px 0;
-    color: var(--darkwhite);
-    font-size: 1.7rem;
-    line-height: 1.8rem;
-    font-weight: bold;
-    letter-spacing: -0.5px;
-    text-transform: none;
-}
-
-.site-nav-logo:hover {
-    text-decoration: none;
-}
-
-.site-nav-logo img {
-    display: block;
-    width: auto;
-    height: 32px;
-}
-
-.site-nav-content {
-    position: relative;
-    align-self: flex-start;
-}
-
-.nav {
-    position: absolute;
-    z-index: 1000;
-    display: flex;
-    margin: 0 0 0 -12px;
-    padding: 0;
-    list-style: none;
-    transition: all 1.0s cubic-bezier(0.19, 1, 0.22, 1);
-}
-
-.nav li {
-    display: block;
-    margin: 0;
-    padding: 0;
-}
-
-.nav li a {
-    position: relative;
-    display: block;
-    padding: 12px 12px;
-    color: var(--darkwhite);
-    opacity: 0.92;
-    transition: opacity 0.35s ease-in-out;
-}
-
-.nav li a:hover {
-    text-decoration: none;
-    color: var(--blue);
-    opacity: 1;
-}
-
-.nav li a:before {
-    content: "";
-    position: absolute;
-    right: 100%;
-    bottom: 8px;
-    left: 12px;
-    height: 1px;
-    background: #fff;
-    opacity: 0.25;
-    transition: all 0.35s ease-in-out;
-}
-
-.nav li a:hover:before {
-    right: 12px;
-    opacity: 0.5;
-}
-
-.site-nav-right {
-    flex: 0 1 auto;
-    display: flex;
-    align-items: center;
-    overflow-x: auto;
-    overflow-y: hidden;
-    -webkit-overflow-scrolling: touch;
-    padding: 10px 0;
-    height: 64px;
-    font-weight: 600;
-    letter-spacing: 0.2px;
-    white-space: nowrap;
-}
-
-.site-nav-right .nav {
-    position: relative;
-    margin: 0;
-    margin-top: -5px;
-}
-
-.site-nav-right .nav a {
-    white-space: nowrap;
-}
-
-.site-nav-right .nav a:before {
-    display: none;
-}
-
-.site-nav-right .nav li:last-of-type a {
-    margin-right: 10px;
-}*/
 
 .social-links {
     flex-shrink: 0;
@@ -743,99 +550,6 @@ body {
         display: none;
     }
 }
-
-/* menu */
-
-/*.site-nav-content .nav {
-    clear: both;
-    max-height: 0;
-    transition: max-height .2s ease-out;
-  }*/
-  
-  /* menu icon */
-  
-  /*.site-nav-content .menu-icon {
-    cursor: pointer;
-    display: inline-block;
-    float: right;
-    padding: 28px 20px;
-    position: relative;
-    user-select: none;
-  }
-  
-  .site-nav-content .menu-icon .navicon {
-    background: #333;
-    display: block;
-    height: 2px;
-    position: relative;
-    transition: background .2s ease-out;
-    width: 18px;
-  }
-  
-  .site-nav-content .menu-icon .navicon:before,
-  .site-nav-content .menu-icon .navicon:after {
-    background: #333;
-    content: '';
-    display: block;
-    height: 100%;
-    position: absolute;
-    transition: all .2s ease-out;
-    width: 100%;
-  }
-  
-  .site-nav-content .menu-icon .navicon:before {
-    top: 5px;
-  }
-  
-  .site-nav-content .menu-icon .navicon:after {
-    top: -5px;
-  }*/
-  
-  /* menu btn */
-  
-  /*.site-nav-content .menu-btn {
-    display: none;
-  }
-  
-  .site-nav-content .menu-btn:checked ~ .menu {
-    max-height: 240px;
-  }
-  
-  .heasite-nav-contentder .menu-btn:checked ~ .menu-icon .navicon {
-    background: transparent;
-  }
-  
-  .site-nav-content .menu-btn:checked ~ .menu-icon .navicon:before {
-    transform: rotate(-45deg);
-  }
-  
-  .site-nav-content .menu-btn:checked ~ .menu-icon .navicon:after {
-    transform: rotate(45deg);
-  }
-  
-  .site-nav-content .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
-  .site-nav-content .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
-    top: 0;
-  }*/
-
-  /* 48em = 768px */
-
-/*@media (min-width: 48em) {
-    .site-nav-content li {
-      float: left;
-    }
-    .site-nav-content li a {
-      padding: 20px 30px;
-    }
-    .site-nav-content .menu {
-      clear: none;
-      float: right;
-      max-height: none;
-    }
-    .site-nav-content .menu-icon {
-      display: none;
-    }
-  }*/
 
 
 /* 6. Post Feed
@@ -1219,7 +933,7 @@ make sure this only happens on large viewports / desktop-ish devices.
     font-size: 1.3rem;
     line-height: 1.4em;
     font-weight: 700;
-    margin-top: 20px;
+    margin-top: 40px;
 }
 
 .post-full-date i {
@@ -1309,13 +1023,11 @@ make sure this only happens on large viewports / desktop-ish devices.
     margin: 0 auto;
     padding: 0 70px 1vw;
     min-height: 230px;
-    font-size: 2.0rem;
-    line-height: 1.4em;
     background: #fff;
 }
 
 .post-full-content p {
-    font-size: 2.0rem;
+    font-size: 20px;
     font-family: 'Lato',Helvetica,sans-serif;
     line-height: 1.5;
 }
@@ -1391,12 +1103,7 @@ make sure this only happens on large viewports / desktop-ish devices.
 }
 
 .post-full-content a {
-    color: var(--blue);
-}
-
-.post-full-content a:hover {
-    color: var(--blue);
-    text-decoration: underline;
+    border-bottom: 1px solid currentColor;
 }
 
 .post-full-content strong,
@@ -1598,9 +1305,12 @@ Usage (In Ghost editor):
 
 .post-full-content h3 {
     margin: 0.5em 0 0.2em;
-    font-size: 2.5rem;
+    font-size: 2.0rem;
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    color: var(--blue);
     line-height: 1.3em;
-    font-weight: 600;
+    font-weight: 700;
 }
 .post-full-content h2 + h3 {
     margin-top: 0.7em;
@@ -2400,7 +2110,8 @@ Usage (In Ghost editor):
 }
 
 .post-share-buttons a {
-    color: var(--white);
+    color: var(--darkgray);
+    border-bottom: none;
 }
 
 .post-share-buttons a .fab {
@@ -2408,8 +2119,7 @@ Usage (In Ghost editor):
 }
 
 .post-share-buttons a:hover {
-    color: var(--white);
-    opacity: 0.7;
+    color: var(--blue);
 }
 
 .post-share-buttons .fab {
@@ -3375,225 +3085,3 @@ Usage (In Ghost editor):
         margin-left: 0;
     }
 }
-
-
-/* 12. Dark Mode
-/* ---------------------------------------------------------- */
-/*@media (prefers-color-scheme: dark) {*/
-    body {
-        color: var(--darkwhite);
-        background: var(--darkmode);
-    }
-
-    img {
-        opacity: 0.9;
-    }
-
-    .site-nav-logo img {
-        opacity: 1;
-    }
-
-    .site-header-background:before {
-        background: rgba(0,0,0,0.3);
-    }
-
-    .post-feed {
-        background: var(--darkmode);
-    }
-
-    .post-card,
-    .post-card:hover {
-        border-bottom-color: var(--darkborder);
-    }
-
-    .author-profile-image {
-        background: var(--darkmode);
-    }
-
-    .post-card-byline-content a {
-        color: rgba(255, 255, 255, 0.75);
-    }
-
-    .post-card-byline-content a:hover {
-        color: var(--darkwhite);
-    }
-
-    .post-card-image {
-        background: var(--darkmode);
-    }
-
-    .post-card-title {
-        color: var(--darkwhite);
-    }
-
-    .post-card-excerpt {
-        color: var(--grey);
-        font-weight: 600;
-    }
-
-    .author-avatar,
-    .static-avatar {
-        border-color: var(--medgreybg);
-    }
-
-    .site-main,
-    .post-template .site-main,
-    .page-template .site-main {
-        background: var(--darkmode);
-    }
-
-    .post-full-content {
-        background: var(--darkmode);
-    }
-
-    .post-full-title {
-        color: var(--darkwhite);
-    }
-
-    .post-full-custom-excerpt {
-        color: var(--midgrey);
-    }
-
-    .post-full-image {
-        background-color: var(--darkmode);
-    }
-
-    .post-full-byline {
-        border-top-color: color(var(--darkmode) l(+15%));
-    }
-
-    .post-full-byline-meta h4 a {
-        color: rgba(255, 255, 255, 0.75);
-    }
-
-    .post-full-byline-meta h4 a:hover {
-        color: var(--darkwhite);
-    }
-
-    .author-list-item .author-card {
-        background: color(var(--darkmode) l(+4%));
-        box-shadow: 0 12px 26px rgba(0,0,0,0.4);
-    }
-
-    .author-list-item .author-card:before {
-        border-top-color: color(var(--darkmode) l(+4%));
-    }
-
-    .no-image .author-social-link a {
-        color: var(--blue);
-    }
-
-    .post-full-content h1,
-    .post-full-content h2,
-    .post-full-content h3,
-    .post-full-content h4,
-    .post-full-content h6 {
-        color: var(--darkwhite);
-    }
-
-    .post-full-content strong {
-        color: var(--darkwhite);
-    }
-
-    .post-full-content em {
-        color: var(--darkwhite);
-    }
-
-    .post-full-content code {
-        color: var(--darkwhite);
-        background: #000;
-    }
-
-    hr {
-        border-top-color: color(var(--darkmode) l(+8%));
-    }
-
-    .post-full-content figcaption {
-        color: var(--grey);
-    }
-
-    .post-full-content table td:first-child {
-        background-image: linear-gradient(to right, var(--darkmode) 50%, color(var(--darkmode) a(0%)) 100%);
-    }
-
-    .post-full-content table td:last-child {
-        background-image: linear-gradient(to left, var(--darkmode) 50%, color(var(--darkmode) a(0%)) 100%);
-    }
-
-    .post-full-content table th {
-        color: rgba(255, 255, 255, 0.85);
-        background-color: color(var(--darkmode) l(+8%));
-    }
-
-    .post-full-content table th,
-    .post-full-content table td {
-        border: color(var(--darkmode) l(+8%)) 1px solid;
-    }
-
-    .post-full-content .kg-bookmark-container,
-    .post-full-content .kg-bookmark-container:hover {
-        color: rgba(255, 255, 255, 0.75);
-        box-shadow: 0 0 1px rgba(255,255,255,0.9);
-    }
-
-    .kg-bookmark-title {
-        color: var(--darkwhite);
-    }
-
-    .kg-bookmark-description {
-        color: rgba(255, 255, 255, 0.75);
-    }
-
-    .kg-bookmark-metadata {
-        color: rgba(255, 255, 255, 0.75);
-    }
-
-    .site-archive-header .no-image {
-        color: var(--darkwhite);
-        background: var(--darkmode);
-    }
-
-    .site-archive-header .no-image .site-header-content {
-        border-bottom-color: color(var(--darkmode) l(+15%));
-    }
-
-    .site-header-content .author-profile-image {
-        box-shadow: 0 0 0 6px hsla(0,0%,100%,0.04);
-    }
-
-    .subscribe-form {
-        border: none;
-        background: linear-gradient(color(var(--darkmode) l(-6%)), color(var(--darkmode) l(-3%)));
-    }
-
-    .subscribe-form-title {
-        color: rgba(255, 255, 255, 0.9);
-    }
-
-    .subscribe-form p {
-        color: rgba(255, 255, 255, 0.7);
-    }
-
-    .subscribe-email {
-        border-color: color(var(--darkmode) l(+6%));
-        color: rgba(255, 255, 255, 0.9);
-        background: color(var(--darkmode) l(+3%));
-    }
-
-    .subscribe-email:focus {
-        border-color: color(var(--darkmode) l(+25%));
-    }
-
-    .subscribe-form button {
-        opacity: 0.9;
-    }
-
-    .subscribe-form .invalid .message-error,
-    .subscribe-form .error .message-error {
-        color: color(var(--red) l(+5%) s(-5%));
-    }
-
-    .subscribe-form .success .message-success {
-        color: color(var(--green) l(+5%) s(-5%));
-    }
-/*}*/
