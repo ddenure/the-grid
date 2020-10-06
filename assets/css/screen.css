@@ -2171,11 +2171,11 @@ Usage (In Ghost editor):
 
 .post-full-content figcaption {
     margin: 1.0em 0 0;
-    color: var(--midgrey);
-    font-size: 1.3rem;
-    line-height: 1.4em;
-    font-weight: 700;
-    text-align: left;
+    color: var(--gray);
+    font-size: 1.5rem;
+    line-height: 1.5;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
 }
 
 .kg-width-full figcaption {
