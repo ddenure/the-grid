@@ -300,12 +300,6 @@ body {
     -moz-font-feature-settings: "liga" on;
 }
 
-::selection {
-    text-shadow: none;
-    color: #ffffff;
-    background: var(--purple);
-}
-
 hr {
     position: relative;
     display: block;

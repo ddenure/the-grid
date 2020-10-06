@@ -297,11 +297,11 @@ body {
     letter-spacing: .1em;
     font-weight: 700;
     text-decoration: none;
-    color: var(--darkgray);
+    color: var(--darkwhite);
 }
 
 .site-nav li a:hover {
-    color: var(--gray);
+    color: var(--white);
 }
 
 .site-nav .site-nav-logo {
@@ -320,8 +320,8 @@ body {
 /* menu */
 
 .site-header {
-    background: var(--white);
-    border-bottom: 1px solid var(--grayborder);
+    background: var(--darkgreybg);
+    /*border-bottom: 1px solid var(--darkgreybg);*/
 }
 
 .site-nav .nav {
@@ -3029,12 +3029,11 @@ Usage (In Ghost editor):
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    color: var(--gray);
-    font-size: 1.3rem;
+    font-size: 1.6rem;
 }
 
 .site-footer-content a {
-    color: var(--gray);
+    color: var(--white);
 }
 
 .site-footer-content a:hover {
