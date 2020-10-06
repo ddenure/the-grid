@@ -2109,6 +2109,16 @@ Usage (In Ghost editor):
     font-size: 1.9rem;
 }
 
+.post-share-title {
+    font-style: 16px;
+    font-weight: 700;
+    font-family: 'Open Sans',sans-serif;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    line-height: 1.3em;
+    margin-bottom: 8px;
+}
+
 @media (max-width: 767px) {
     .post-share-buttons {
         padding: 30px 20px;
