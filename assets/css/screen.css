@@ -320,7 +320,7 @@ body {
 /* menu */
 
 .site-header {
-    background: var(--darkgreybg);
+    background: var(--black);
     /*border-bottom: 1px solid var(--darkgreybg);*/
 }
 
@@ -3031,7 +3031,7 @@ Usage (In Ghost editor):
     padding-top: 20px;
     padding-bottom: 20px;
     color: var(--darkwhite);
-    background: var(--darkgreybg);
+    background: var(--black);
 }
 
 .site-footer-content {
