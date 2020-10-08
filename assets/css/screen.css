@@ -314,7 +314,8 @@ body {
 }
 
 .site-nav .site-nav-logo img {
-    height: 70px;
+    height: 20px;
+    margin-top: 17px;
 }
 
 /* menu */
